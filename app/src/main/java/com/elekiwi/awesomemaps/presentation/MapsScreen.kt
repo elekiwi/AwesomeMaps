@@ -1,4 +1,4 @@
-package com.elekiwi.awesomemaps
+package com.elekiwi.awesomemaps.presentation
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
