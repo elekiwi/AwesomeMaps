@@ -88,5 +88,10 @@ dependencies {
     implementation("androidx.camera:camera-view:1.3.2")
     implementation("androidx.camera:camera-extensions:1.3.2")
 
+    //LiveData
+    implementation ("androidx.compose.runtime:runtime-livedata:1.0.0")
+
+    //Icons
+    implementation("androidx.compose.material:material-icons-extended:1.6.3")
 
 }
