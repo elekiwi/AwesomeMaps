@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -93,5 +94,9 @@ dependencies {
 
     //Icons
     implementation("androidx.compose.material:material-icons-extended:1.6.3")
+
+    //Firebase
+    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+    implementation ("com.firebaseui:firebase-ui-auth:7.2.0")
 
 }

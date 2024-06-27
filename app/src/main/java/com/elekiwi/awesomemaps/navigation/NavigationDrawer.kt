@@ -35,6 +35,7 @@ import androidx.navigation.compose.rememberNavController
 import com.elekiwi.awesomemaps.presentation.camera_screen.CameraScreen
 import com.elekiwi.awesomemaps.presentation.camera_screen.CameraViewModel
 import com.elekiwi.awesomemaps.presentation.MapsScreen
+import com.elekiwi.awesomemaps.presentation.MapsViewModel
 import com.elekiwi.awesomemaps.presentation.camera_screen.TakePhotoScreen
 import kotlinx.coroutines.launch
 
@@ -96,7 +97,7 @@ fun MyNavigationDrawer() {
             ) {
                 NavHost(navController = navigationController, startDestination = DrawerItem.MAPS.route) {
                     composable(DrawerItem.MAPS.route) {
-                        MapsScreen()
+                        MapsScreen(MapsViewModel())
                     }
                     composable(DrawerItem.LIST.route) {
                        // AboutScreen(drawerState)

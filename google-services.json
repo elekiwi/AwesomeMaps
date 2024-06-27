@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "145861939439",
+    "project_id": "awesomemaps-427515",
+    "storage_bucket": "awesomemaps-427515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145861939439:android:e8455ad25a39b46e668b1a",
+        "android_client_info": {
+          "package_name": "com.elekiwi.awesomemaps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVFiCEvqCmK3lBIHLCfHNBJWs4nHZ3194"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
