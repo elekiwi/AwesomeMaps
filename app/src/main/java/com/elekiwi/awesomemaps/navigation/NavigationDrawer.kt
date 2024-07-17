@@ -37,6 +37,7 @@ import com.elekiwi.awesomemaps.presentation.camera_screen.CameraViewModel
 import com.elekiwi.awesomemaps.presentation.MapsScreen
 import com.elekiwi.awesomemaps.presentation.MapsViewModel
 import com.elekiwi.awesomemaps.presentation.camera_screen.TakePhotoScreen
+import com.elekiwi.awesomemaps.presentation.login.LoginViewModel
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -95,21 +96,20 @@ fun MyNavigationDrawer() {
                     .fillMaxSize()
                     .padding(it)
             ) {
+
+
                 NavHost(navController = navigationController, startDestination = DrawerItem.MAPS.route) {
                     composable(DrawerItem.MAPS.route) {
                         MapsScreen(MapsViewModel())
                     }
                     composable(DrawerItem.LIST.route) {
-                       // AboutScreen(drawerState)
+                        // AboutScreen(drawerState)
                     }
                     composable(DrawerItem.CAMERA.route) {
                         CameraScreen(
                             navigationController = navigationController,
                             cameraViewModel = CameraViewModel()
                         )
-                    }
-                    composable(Routes.TakePhotoScreen.route) {
-                        TakePhotoScreen(navigationController = navigationController, cameraViewModel = CameraViewModel())
                     }
                 }
             }
