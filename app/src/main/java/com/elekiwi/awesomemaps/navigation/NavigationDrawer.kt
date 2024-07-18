@@ -34,10 +34,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.elekiwi.awesomemaps.presentation.camera_screen.CameraScreen
 import com.elekiwi.awesomemaps.presentation.camera_screen.CameraViewModel
-import com.elekiwi.awesomemaps.presentation.MapsScreen
-import com.elekiwi.awesomemaps.presentation.MapsViewModel
-import com.elekiwi.awesomemaps.presentation.camera_screen.TakePhotoScreen
-import com.elekiwi.awesomemaps.presentation.login.LoginViewModel
+import com.elekiwi.awesomemaps.presentation.maps.MapsScreen
+import com.elekiwi.awesomemaps.presentation.maps.MapsViewModel
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)

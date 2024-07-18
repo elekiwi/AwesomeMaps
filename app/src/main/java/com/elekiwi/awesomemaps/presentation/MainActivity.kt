@@ -15,6 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.elekiwi.awesomemaps.navigation.MyNavigationDrawer
 import com.elekiwi.awesomemaps.navigation.NavManager
 import com.elekiwi.awesomemaps.presentation.login.LoginViewModel
+import com.elekiwi.awesomemaps.presentation.maps.MapsViewModel
 import com.elekiwi.awesomemaps.ui.theme.AwesomeMapsTheme
 
 class MainActivity : ComponentActivity() {

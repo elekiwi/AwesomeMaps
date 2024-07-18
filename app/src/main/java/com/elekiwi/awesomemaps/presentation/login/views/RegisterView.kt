@@ -22,6 +22,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.elekiwi.awesomemaps.components.Alert
+import com.elekiwi.awesomemaps.navigation.Routes
 import com.elekiwi.awesomemaps.presentation.login.LoginViewModel
 
 @Composable
@@ -69,7 +70,7 @@ fun RegisterView(navController: NavController, loginViewModel: LoginViewModel) {
         Button(
             onClick = {
                 loginViewModel.createUser(email,password,username){
-                    navController.navigate("Home")
+                    navController.navigate(Routes.HomeScreen.route)
                 }
             }, modifier = Modifier
                 .fillMaxWidth()
